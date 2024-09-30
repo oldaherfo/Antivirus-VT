@@ -1,0 +1,33 @@
+# Herramienta de Escaneo de Archivos y Detección de Virus
+
+Esta es una herramienta simple de escaneo de archivos y detección de virus construida en Python. Escanea un directorio especificado en busca de nuevos archivos, los verifica en VirusTotal para detectar posibles amenazas y envía notificaciones por correo electrónico para cualquier archivo malicioso detectado.
+
+## Características
+- Escanea un directorio especificado en busca de nuevos archivos
+- Verifica archivos contra la API de VirusTotal para la detección de malware
+- Envía notificaciones por correo electrónico para archivos potencialmente maliciosos
+- Simple y ligera
+
+## Requisitos
+Este proyecto requiere Python y las siguientes bibliotecas:
+- `os`
+- `datetime`
+- `virus_total_apis`
+- `hashlib`
+- `time`
+- `smtplib`
+- `email`
+
+## Cómo Usar:
+
+1. Clona este repositorio.
+2. Instala las dependencias requeridas utilizando `pip install -r requirements.txt`.
+3. Actualiza las variables `email_recipient`, `from_email` y `password` en el script con credenciales de correo electrónico válidas.
+4. Actualiza la variable `API_KEY` con tu clave de API de VirusTotal.
+5. Ejecuta el script.
+
+## Ejecución del Programa
+AnivirusVT.py
+
+También puedes ejecutar este script automáticamente utilizando el programador de tareas de Windows.
+Este proyecto fue creado por Oldaherfo - 2024
